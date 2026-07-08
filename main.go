@@ -39,7 +39,7 @@ func main() {
 		log.WithProcessor(processor),
 		log.WithResource(resource.NewSchemaless(attribute.KeyValue{
 			Key:   "service.name",
-			Value: attribute.StringValue("claude-code"),
+			Value: attribute.StringValue("my-service"),
 		})),
 	)
 	defer func() {
